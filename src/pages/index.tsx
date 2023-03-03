@@ -1,7 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import  acb from 'public/logo-asso/acb.png'
+import  cercleLogo from 'public/logo-asso/le-cercle-de-la-compliance.png'
+import ACFE from '/public/logo-asso/Logo-ACFE-petit.png'
+import synfie from '/public/logo-asso/logo-synfie.png'
+import drapeaux from '/public/drapeaux-ue.jpg'
+import map from '/public/map.jpg'
+import logo from '/public/logo-celtic.png'
 import Header from "@/pages/Component/Header";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,6 +23,144 @@ export default function Home() {
       </Head>
       <Header></Header>
      <main>
+         <div className="flex flex-col items-center justify-center min-h-screen ">
+             <div
+                 className="absolute top-0 left-0 w-full h-screen p-6"
+                 style={{
+                     backgroundImage: "url('/buildings.jpg')",
+                     backgroundSize: "cover",
+                     backgroundPosition: "center",
+                 }}
+             >
+
+             </div>
+             <div className="relative z-10 flex flex-col gap-1 items-center justify-center bg-slate-700/40 px-4 py-8 rounded-md s">
+                    <div className={"flex gap-2"}>
+                        <Image src={logo} alt={"logo"} width={40} height={40}/>
+                        <h1 className="text-3xl font-bold text-white">  Celtics-intelligence</h1>
+                    </div>
+                 <h2 className={"text-2xl font-semibold text-white"}>TRANSVERSAL INVESTIGATIONS & ANALYSES</h2>
+             </div>
+         </div>
+         <section className="bg-white dark:bg-gray-900">
+             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+
+                 <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+                     <Image src={drapeaux} alt={"Flags of UE"} className={"rounded-2xl"}/>
+
+                             <div className="mt-4 md:mt-0">
+                                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Transform Your Business with Our Economic Intelligence Solutions.</h2>
+                                 <p className="mb-6 font-light text-gray-600 md:text-lg dark:text-gray-400">Celtic Intelligence is an Ireland-based, leaded by an experimented French citizen, consultancy
+                                     that services exclusively European clients base providing corporate investigations, market
+                                     intelligence, political risk assessments and advisory services.
+                                     </p>
+                                 <a href="#"
+                                    className="inline-flex items-center text-white bg-[#1A3260] hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+                                     Contact-us
+                                     <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                         <path fill-rule="evenodd"
+                                               d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                               clip-rule="evenodd"></path>
+                                     </svg>
+                                 </a>
+                             </div>
+                 </div>
+                 <div className="px-4 mx-auto text-center">
+                     <span className="font-semibold text-gray-400 uppercase">TRUSTED BY PROFESSIONAL</span>
+                     {/*Professionals*/}
+                     <div className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+                         <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <Image src={acb} alt={"logo acb"} width={200} className={"grayscale hover:grayscale-0"}/>
+                         </a>
+                         <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                             <Image src={cercleLogo} alt={"logo acb"}  height={100} className={"grayscale hover:grayscale-0"}/>
+                         </a>
+                         <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                             <Image src={ACFE} alt={"logo acb"}  height={100} width={200}  className={"grayscale hover:grayscale-0"}/>
+                         </a>
+                         <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                             <Image src={synfie} alt={"logo acb"}  height={100} width={200} className={"grayscale hover:grayscale-0"}/>
+                         </a>
+                     </div>
+                 {/* fin professional*/}
+                 </div>
+             </div>
+         </section>
+         <section className="bg-white dark:bg-gray-900">
+             <div
+                 className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                 <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Strong links to key markets</h2>
+                     <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers.
+                         Small enough to be simple and quick, but big enough to deliver the scope you want at the pace
+                         you need. Small enough to be simple and quick, but big enough to deliver the scope you want at
+                         the pace you need.</p>
+                     <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be
+                         simple and quick.</p>
+                 </div>
+                 <div className="grid grid-cols gap-4 mt-8">
+                     <Image src={map} alt={"Flags of UE"} className={"rounded-2xl"}/>
+
+                 </div>
+             </div>
+         </section>
+         <section className="bg-white dark:bg-gray-900">
+             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                 <div className="max-w-screen-md mb-8 lg:mb-16">
+                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our area of expertise</h2>
+                     <p className="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets
+                         where technology, innovation, and capital can unlock long-term value and drive economic
+                         growth.</p>
+                 </div>
+                 <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                     <div>
+                         <div
+                             className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                             <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd"
+                                       d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                       clip-rule="evenodd"></path>
+                             </svg>
+                         </div>
+                         <h3 className="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
+                         <p className="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate
+                             seamlessly with all the organization and hit your marketing goals every month with our
+                             marketing plan.</p>
+                     </div>
+                     <div>
+                         <div
+                             className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                             <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                     d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                             </svg>
+                         </div>
+                         <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+                         <p className="text-gray-500 dark:text-gray-400">Protect your organization, devices and stay
+                             compliant with our structured workflows and custom permissions made for you.</p>
+                     </div>
+                     <div>
+                         <div
+                             className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                             <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd"
+                                       d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                       clip-rule="evenodd"></path>
+                                 <path
+                                     d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+                             </svg>
+                         </div>
+                         <h3 className="mb-2 text-xl font-bold dark:text-white">Business Automation</h3>
+                         <p className="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and
+                             much more. Now power up with hundreds of new templates to help you get started.</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
 
      </main>
     </>
