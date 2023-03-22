@@ -11,6 +11,12 @@ module.exports = {
   theme: {
 
     extend: {
+      colors: {
+        white: '#FFFFFF',
+        primary: '#1A3260',
+        lightPrimary: '#346699',
+        cyan:"#6699CC",
+      },
       backgroundImage: {
         'hero': "url('../public/buildings.jpg')",
       },
