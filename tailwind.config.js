@@ -16,6 +16,7 @@ module.exports = {
         primary: '#1A3260',
         lightPrimary: '#346699',
         cyan:"#6699CC",
+        lightBlue: "#E6F2FF",
       },
       backgroundImage: {
         'hero': "url('../public/buildings.jpg')",
