@@ -5,16 +5,34 @@ import  acb from 'public/logo-asso/acb.png'
 import  cercleLogo from 'public/logo-asso/le-cercle-de-la-compliance.png'
 import ACFE from '/public/logo-asso/Logo-ACFE-petit.png'
 import synfie from '/public/logo-asso/logo-synfie.png'
+import team from '/public/team.png'
 import drapeaux from '/public/drapeaux-ue.jpg'
 import strategy from '/public/strategy.svg'
 import compliance from '/public/compliance.svg'
 import operationnal from '/public/operationnal.svg'
 import map from '/public/map.jpg'
 import logo from '/public/logo-celtic.png'
-
+import MapChart from "@/pages/Component/Map";
 
 const inter = Inter({ subsets: ['latin'] })
+const features = [
+    {
+        name: 'Push to deploy.',
+        description:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
 
+    },
+    {
+        name: 'SSL certificates.',
+        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+
+    },
+    {
+        name: 'Database backups.',
+        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+
+    },
+]
 export default function Home() {
   return (
     <>
@@ -27,7 +45,7 @@ export default function Home() {
      <main>
          <div className="flex flex-col items-center justify-center min-h-screen ">
              <div
-                 className="absolute top-0 left-0 w-full h-screen p-6"
+                 className="absolute backdrop-blur-sm top-0 left-0 w-full h-screen p-6"
                  style={{
                      backgroundImage: "url('/buildings.jpg')",
                      backgroundSize: "cover",
@@ -36,10 +54,10 @@ export default function Home() {
              >
 
              </div>
-             <div className="relative z-10 flex flex-col gap-1 items-center justify-center bg-slate-700/40 px-4 py-8 rounded-md s">
+             <div className="relative z-10 flex flex-col gap-1 items-center justify-center  px-4 py-8 rounded-md s">
                     <div className={"flex gap-2"}>
                         <Image src={logo} alt={"logo"} width={40} height={40}/>
-                        <h1 className="text-3xl font-bold text-white">  Celtics-intelligence</h1>
+                        <h1 className="text-4xl font-bold text-white">  Celtics-intelligence</h1>
                     </div>
                  <h2 className={"text-2xl font-semibold text-white"}>TRANSVERSAL INVESTIGATIONS & ANALYSES</h2>
              </div>
@@ -52,19 +70,13 @@ export default function Home() {
 
                              <div className="mt-4 md:mt-0">
                                  <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Transform Your Business with Our Economic Intelligence Solutions.</h2>
-                                 <p className="mb-6 font-light text-gray-600 md:text-lg dark:text-gray-400">Celtic Intelligence is an Ireland-based, leaded by an experimented French citizen, consultancy
+                                 <p className="mb-6  text-gray-500 sm:text-xl  dark:text-gray-400">Celtic Intelligence is an Ireland-based, leaded by an experimented French citizen, consultancy
                                      that services exclusively European clients base providing corporate investigations, market
                                      intelligence, political risk assessments and advisory services.
                                      </p>
                                  <a href="#"
                                     className="inline-flex items-center text-white bg-primary transition hover:bg-lightPrimary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
                                      Contact-us
-                                     <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                         <path fill-rule="evenodd"
-                                               d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                               clip-rule="evenodd"></path>
-                                     </svg>
                                  </a>
                              </div>
                  </div>
@@ -89,38 +101,124 @@ export default function Home() {
                  </div>
              </div>
          </section>
-         <section className="bg-white dark:bg-gray-900">
-             <div
-                 className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                 <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Strong links to key markets</h2>
-                     <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers.
-                         Small enough to be simple and quick, but big enough to deliver the scope you want at the pace
-                         you need. Small enough to be simple and quick, but big enough to deliver the scope you want at
-                         the pace you need.</p>
-                     <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be
-                         simple and quick.</p>
-                 </div>
-                 <div className="grid grid-cols gap-4 mt-8">
-                     <Image src={map} alt={"Flags of UE"} className={"rounded-2xl"}/>
+         {/*Content sectction*/}
+         <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
+             <div
+                 className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                 <div
+                     className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                     <div className="lg:pr-4">
+                         <div className="lg:max-w-lg">
+                             <p className="text-base font-semibold leading-7 text-primary">Go worldwide</p>
+                             <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Strong links to key markets</h1>
+                             <p className="mt-6 text-xl leading-8 text-gray-700">Global Reach, Local Expertise: Our Network Across Africa, Europe, Middle East, and Latin America</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div
+                     className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                     <MapChart/>
+                 </div>
+                 <div
+                     className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                     <div className="lg:pr-4">
+                         <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                             <p>We have an expansive global network across multiple regions.</p>
+                             <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                                 <li className="flex gap-x-3">
+                                     <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
+                                          fill="currentColor" aria-hidden="true">
+                                         <path fill-rule="evenodd"
+                                               d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
+                                               clip-rule="evenodd"/>
+                                     </svg>
+                                     <span><strong className="font-semibold text-lg text-gray-900">Africa</strong>    </span>
+                                 </li>
+                                 <li className="flex gap-x-3">
+                                     <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
+                                          fill="currentColor" aria-hidden="true">
+                                         <path fill-rule="evenodd"
+                                               d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                                               clip-rule="evenodd"/>
+                                     </svg>
+                                     <span><strong className="font-semibold text-lg text-gray-900">Middle East and Gulf area,</strong></span>
+                                 </li>
+                                 <li className="flex gap-x-3">
+                                     <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
+                                          fill="currentColor" aria-hidden="true">
+                                         <path
+                                             d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"/>
+                                         <path fill-rule="evenodd"
+                                               d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
+                                               clip-rule="evenodd"/>
+                                     </svg>
+                                     <span><strong className="font-semibold text-lg text-gray-900">Western and Central Europe</strong></span>
+                                 </li>
+                                 <li className="flex gap-x-3">
+                                     <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
+                                          fill="currentColor" aria-hidden="true">
+                                         <path
+                                             d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"/>
+                                         <path fill-rule="evenodd"
+                                               d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
+                                               clip-rule="evenodd"/>
+                                     </svg>
+                                     <span><strong className="font-semibold text-xl text-gray-900">Latin America</strong></span>
+                                 </li>
+                             </ul>
+                             <p className="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio
+                                 id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus
+                                 in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis
+                                 ac tempor et ut. Ac lorem vel integer orci.</p>
+                             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No
+                                 problem.</h2>
+                             <p className="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in.
+                                 Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat
+                                 vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
+                                 enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed
+                                 convallis diam.</p>
+                         </div>
+                     </div>
                  </div>
              </div>
          </section>
-         <section className="bg-white dark:bg-gray-900">
+
+         {/*<section className="bg-white dark:bg-gray-900">*/}
+         {/*    <div*/}
+         {/*        className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">*/}
+         {/*        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">*/}
+         {/*            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Strong links to key markets</h2>*/}
+         {/*            <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers.*/}
+         {/*                Small enough to be simple and quick, but big enough to deliver the scope you want at the pace*/}
+         {/*                you need. Small enough to be simple and quick, but big enough to deliver the scope you want at*/}
+         {/*                the pace you need.</p>*/}
+         {/*            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be*/}
+         {/*                simple and quick.</p>*/}
+         {/*        </div>*/}
+         {/*        <div className="grid grid-cols gap-4 mt-8">*/}
+         {/*            <MapChart/>*/}
+
+         {/*        </div>*/}
+         {/*    </div>*/}
+         {/*</section>*/}
+         <section className="  dark:bg-gray-900">
              <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                 <div className="grid place-content-center max-w-screen-md mb-8 lg:mb-16">
-                     <h2 className="mb-4 text-4xl align-center tracking-tight font-extrabold text-gray-900 dark:text-white">Our area of expertise</h2>
-                     <p className="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets
-                         where technology, innovation, and capital can unlock long-term value and drive economic
-                         growth.</p>
+                 <div className={"flex justify-center w-full"}>
+                     <div className="grid place-self-center max-w-screen-md mb-8 lg:mb-16">
+                         <h2 className="mb-4 text-4xl place-self-center tracking-tight font-bold text-gray-900 dark:text-white">Our area of expertise</h2>
+                         <p className="text-gray-500 sm:text-xl dark:text-gray-400 text-center">Our expertise in economic intelligence covers key areas of strategy,
+                             compliance, and operations. We offer sector studies, background checks, due diligence,
+                             as well as support for compliance, including anti-corruption accompaniment and export assistance..
+                         </p>
+                     </div>
                  </div>
 
-                 <div className="py-16">
+                 <div className="">
                      <div className="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">
                          <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
                              <div
-                                 className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 pt-12 shadow-2xl shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
+                                 className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 pt-12 hover:shadow-2xl hover:shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
                                  <div className="mb-12 space-y-4">
                                      <div className={"flex place-content-center"}>
                                          <Image src={strategy} alt={"illustration of man standing in front of a tab"} className={"h-1/2 w-1/2 "} width={800} height={500}/>
@@ -136,7 +234,7 @@ export default function Home() {
                                  </div>
                              </div>
                              <div
-                                 className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 py-12 shadow-2xl shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
+                                 className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 py-12 hover:shadow-2xl hover:shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
                                  <div className="mb-12 space-y-4">
                                      <div className={"flex place-content-center h-fit"}>
                                          <Image src={compliance} alt={"illustration of man standing in front of a tab"} className={"h-1/2 w-1/2 "} width={800} height={500}/>
@@ -159,7 +257,7 @@ export default function Home() {
                                  </div>
                              </div>
                              <div
-                                 className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 py-12 shadow-2xl shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
+                                 className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 py-12 hover:shadow-2xl hover:shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
                                  <div className="mb-12 space-y-4">
                                      <div className={"flex place-content-center justify-self-stretch"}>
                                          <Image src={operationnal} alt={"illustration of man standing in front of a tab"} className={"h-full w-full"} width={800} height={500}/>
@@ -177,8 +275,199 @@ export default function Home() {
                          </div>
                      </div>
                  </div>
-
              </div>
+         </section>
+         <section>
+
+             <div className="py-16">
+                 <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
+                     <div
+                         className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
+                         <div className="md:5/12 lg:w-1/2">
+                             <Image src={team} alt={"Team"}  className={""}/>
+
+                         </div>
+                         <div className="md:7/12 lg:w-1/2">
+                             <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+                                 Professionals dedicated to your success
+                             </h2>
+                             <p className="my-8 text-gray-600 dark:text-gray-300">
+                                 Our team is skilled, experienced and discreet, allowing us to work closely
+                                 with clients to mitigate risks and make informed decisions in challenging
+                                 and complex business environments.
+                             </p>
+                             <div className="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+                                 <div className="mt-8 flex gap-4 md:items-center">
+                                     <div
+                                         className="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                              className="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
+                                             <path fill-rule="evenodd"
+                                                   d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                                                   clip-rule="evenodd"/>
+                                         </svg>
+                                     </div>
+                                     <div className="w-5/6">
+                                         <h4 className="font-semibold text-lg text-gray-700 dark:text-indigo-300">Discreet</h4>
+                                         <p className="text-gray-500 dark:text-gray-400">Asperiores nemo possimus
+                                             nesciunt quam mollitia.</p>
+                                     </div>
+                                 </div>
+                                 <div className="pt-4 flex gap-4 md:items-center">
+                                     <div className="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
+                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                              className="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
+                                             <path fill-rule="evenodd"
+                                                   d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                                   clip-rule="evenodd"/>
+                                         </svg>
+                                     </div>
+                                     <div className="w-5/6">
+                                         <h4 className="font-semibold text-lg text-gray-700 dark:text-teal-300">Real
+                                             Time Location</h4>
+                                         <p className="text-gray-500 dark:text-gray-400">Asperiores nemo possimus
+                                             nesciunt quam mollitia.</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         <section>
+
+             {/* Contact Us */}
+             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                 <div className="max-w-2xl lg:max-w-5xl mx-auto">
+                     <div className="text-center">
+                         <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
+                             Contact us
+                         </h1>
+                         <p className="mt-1 text-gray-600 dark:text-gray-400">
+                             We'd love to talk about how we can help you.
+                         </p>
+                     </div>
+                     <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+                         {/* Card */}
+                         <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
+                             <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
+                                 Fill in the form
+                             </h2>
+                             <form>
+                                 <div className="grid gap-4">
+                                     {/* Grid */}
+                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                         <div>
+                                             <label htmlFor="hs-firstname-contacts-1" className="sr-only">First Name</label>
+                                             <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1" className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="First Name" />
+                                         </div>
+                                         <div>
+                                             <label htmlFor="hs-lastname-contacts-1" className="sr-only">Last Name</label>
+                                             <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1" className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Last Name" />
+                                         </div>
+                                     </div>
+                                     {/* End Grid */}
+                                     <div>
+                                         <label htmlFor="hs-email-contacts-1" className="sr-only">Email</label>
+                                         <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autoComplete="email" className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Email" />
+                                     </div>
+                                     <div>
+                                         <label htmlFor="hs-phone-number-1" className="sr-only">Phone Number</label>
+                                         <input type="text" name="hs-phone-number-1" id="hs-phone-number-1" className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Phone Number" />
+                                     </div>
+                                     <div>
+                                         <label htmlFor="hs-about-contacts-1" className="sr-only">Details</label>
+                                         <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows={4} className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Details" defaultValue={""} />
+                                     </div>
+                                 </div>
+                                 {/* End Grid */}
+                                 <div className="mt-4 grid">
+                                     <button type="submit" className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Send inquiry</button>
+                                 </div>
+                                 <div className="mt-3 text-center">
+                                     <p className="text-sm text-gray-500">
+                                         We'll get back to you in 1-2 business days.
+                                     </p>
+                                 </div>
+                             </form>
+                         </div>
+                         {/* End Card */}
+                         <div className="divide-y divide-gray-200 dark:divide-gray-800">
+                             {/* Icon Block */}
+                             <div className="flex gap-x-7 py-6">
+                                 <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
+                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                     <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                 </svg>
+                                 <div>
+                                     <h3 className="font-semibold text-gray-800 dark:text-gray-200">Knowledgebase</h3>
+                                     <p className="mt-1 text-sm text-gray-500">We're here to help with any questions or code.</p>
+                                     <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                                         Contact support
+                                         <svg className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fillRule="evenodd" clipRule="evenodd" d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z" fill="currentColor" />
+                                         </svg>
+                                     </a>
+                                 </div>
+                             </div>
+                             {/* End Icon Block */}
+                             {/* Icon Block */}
+                             <div className="flex gap-x-7 py-6">
+                                 <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
+                                     <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                     <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                 </svg>
+                                 <div>
+                                     <h3 className="font-semibold text-gray-800 dark:text-gray-200">FAQ</h3>
+                                     <p className="mt-1 text-sm text-gray-500">Search our FAQ for answers to anything you might ask.</p>
+                                     <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                                         Visit FAQ
+                                         <svg className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fillRule="evenodd" clipRule="evenodd" d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z" fill="currentColor" />
+                                         </svg>
+                                     </a>
+                                 </div>
+                             </div>
+                             {/* End Icon Block */}
+                             {/* Icon Block */}
+                             <div className=" flex gap-x-7 py-6">
+                                 <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
+                                     <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                                     <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z" />
+                                 </svg>
+                                 <div>
+                                     <h3 className="font-semibold text-gray-800 dark:text-gray-200">Developer APIs</h3>
+                                     <p className="mt-1 text-sm text-gray-500">Check out our development quickstart guide.</p>
+                                     <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                                         Contact sales
+                                         <svg className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path fillRule="evenodd" clipRule="evenodd" d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z" fill="currentColor" />
+                                         </svg>
+                                     </a>
+                                 </div>
+                             </div>
+                             {/* End Icon Block */}
+                             {/* Icon Block */}
+                             <div className=" flex gap-x-7 py-6">
+                                 <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200" xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
+                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                 </svg>
+                                 <div>
+                                     <h3 className="font-semibold text-gray-800 dark:text-gray-200">Contact us by email</h3>
+                                     <p className="mt-1 text-sm text-gray-500">If you wish to write us an email instead please use</p>
+                                     <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200" href="#">
+                                         example@site.com
+                                     </a>
+                                 </div>
+                             </div>
+                             {/* End Icon Block */}
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             {/* End Contact Us */}
+
          </section>
      </main>
     </>
