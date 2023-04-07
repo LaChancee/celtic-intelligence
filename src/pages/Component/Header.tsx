@@ -25,7 +25,6 @@ const Header = () => {
                                 >
                                     <div aria-hidden="true" className="flex space-x-1">
                                         <Image alt={"logo celtic-intelligence"} src={img} width={40} height={40} />
-                                        <div className="h-6 w-2 bg-primary dark:bg-primaryLight"></div>
                                     </div>
                                     <span className="text-base font-bold text-gray-600 dark:text-white">
                     Celtic-intelligence
