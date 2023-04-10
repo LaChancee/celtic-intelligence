@@ -55,7 +55,7 @@ export default function service() {
                 </div>
 
 
-            {/*    Carte du monde qui prend toute la lmargeur */}
+            {/*    Carte du monde qui prend toute la margeur */}
                 <div className={"w-full h-1/2 px-64"}>
                     <MapChart/>
                 </div>
