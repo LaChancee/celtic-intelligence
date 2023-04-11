@@ -355,6 +355,7 @@ export default function Home() {
                                                                     />
                                                                 </div>
                                                             );
+                                                            //DEfaut
                                                         default:
                                                             return null;
                                                     }
