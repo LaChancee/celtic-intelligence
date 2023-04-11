@@ -2,16 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import acb from 'public/logo-asso/acb.png'
 import cercleLogo from 'public/logo-asso/le-cercle-de-la-compliance.png'
+import professionals from 'public/projet-planification.jpg'
 import ACFE from '/public/logo-asso/Logo-ACFE-petit.png'
 import synfie from '/public/logo-asso/logo-synfie.png'
-import team from '/public/team.png'
+import strategy from '/public/featuresPic/strategy.jpg'
+import compliance from '/public/featuresPic/compliance.jpg'
+import operationnal from '/public/featuresPic/operationnal.jpg'
+
 import drapeaux from '/public/drapeaux-ue.jpg'
 import logo from '/public/logo-celtic.png'
 import MapChart from "@/pages/Component/Map";
-import React from "react";
+import React, {useState} from "react";
 
 
 export default function Home() {
+    const [openTab, setOpenTab] = useState(1);
+
     return (
         <>
             <Head>
@@ -99,7 +105,7 @@ export default function Home() {
                     className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
                     <div
-                        className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                        className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8  lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start ">
                         <div
                             className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                             <div className="lg:pr-4">
@@ -130,7 +136,7 @@ export default function Home() {
                                                       clip-rule="evenodd"/>
                                             </svg>
                                             <span><strong
-                                                className="font-semibold text-lg text-gray-900">Africa</strong>    </span>
+                                                className="font-semibold text-lg text-gray-900">Africa</strong>   </span>
                                         </li>
                                         <li className="flex gap-x-3">
                                             <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
@@ -165,48 +171,14 @@ export default function Home() {
                                                 className="font-semibold text-xl text-gray-900">Latin America</strong></span>
                                         </li>
                                     </ul>
-                                    <p className="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                                        odio
-                                        id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac
-                                        cursus
-                                        in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                                        convallis
-                                        ac tempor et ut. Ac lorem vel integer orci.</p>
-                                    <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No
-                                        problem.</h2>
-                                    <p className="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                                        consequat in.
-                                        Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim,
-                                        consequat
-                                        vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                                        Tincidunt
-                                        enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a
-                                        sed
-                                        convallis diam.</p>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/*<section className="bg-white dark:bg-gray-900">*/}
-                {/*    <div*/}
-                {/*        className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">*/}
-                {/*        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">*/}
-                {/*            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Strong links to key markets</h2>*/}
-                {/*            <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers.*/}
-                {/*                Small enough to be simple and quick, but big enough to deliver the scope you want at the pace*/}
-                {/*                you need. Small enough to be simple and quick, but big enough to deliver the scope you want at*/}
-                {/*                the pace you need.</p>*/}
-                {/*            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be*/}
-                {/*                simple and quick.</p>*/}
-                {/*        </div>*/}
-                {/*        <div className="grid grid-cols gap-4 mt-8">*/}
-                {/*            <MapChart/>*/}
 
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
                 <section className="  dark:bg-gray-900">
 
                     {/* Features */}
@@ -218,15 +190,31 @@ export default function Home() {
                                     <h2 className="text-2xl text-gray-800 font-bold sm:text-3xl dark:text-gray-200">
                                         Our area of expertise
                                     </h2>
+                                    <p className="text-gray-500 text-md  dark:text-gray-400 text-left">Our expertise in economic intelligence covers key areas of strategy,
+                                        compliance, and operations. We offer sector studies, background checks, due diligence,
+                                        as well as support for compliance, including anti-corruption accompaniment and export assistance..
+                                    </p>
                                     {/* Tab Navs */}
                                     <nav className="grid gap-4 mt-5 md:mt-10" aria-label="Tabs" role="tablist">
                                         <button type="button"
-                                                className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 active"
-                                                id="tabs-with-card-item-1" data-hs-tab="#tabs-with-card-1"
+                                                onClick={e => {
+                                                    e.preventDefault();
+                                                    setOpenTab(1);
+                                                }}
+                                                className={" text-left " +
+                                                    " p-4 md:p-5 rounded-xl  " +
+                                                    (openTab === 1
+                                                        ? "bg-white shadow-md   dark:bg-slate-900"
+                                                        : "hover:bg-gray-200 dark:hover:bg-gray-700")
+                                                }
+                                                 id="tabs-with-card-item-1" data-hs-tab="#tabs-with-card-1"
                                                 aria-controls="tabs-with-card-1" role="tab">
              <span className="flex">
              <svg
-                 className="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200"
+                 className={"flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7  " +(openTab === 1
+                     ? "text-lightPrimary dark:text-blue-500 "
+                     : "text-gray-800 dark:text-gray-200")
+                 }
                  xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
              <path
                  d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
@@ -234,44 +222,77 @@ export default function Home() {
              </svg>
              <span className="grow ml-6">
              <span
-                 className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">Advanced tools</span>
-             <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">Use Preline thoroughly thought and automated libraries to manage your businesses.</span>
+                 className={"block text-lg font-semibold  "+(openTab === 1
+                     ? "text-lightPrimary dark:text-blue-500 "
+                     : "text-gray-800 dark:text-gray-200")}>Strategy</span>
+             <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200"> Sector studies & Business Intelligence Mapping</span>
              </span>
              </span>
                                         </button>
                                         <button type="button"
-                                                className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
+                                                onClick={e => {
+                                                    e.preventDefault();
+                                                    setOpenTab(2);
+                                                }}
+                                                className={" text-left p-4 md:p-5 rounded-xl  " +
+                                            (openTab === 2
+                                                ? "bg-white shadow-md   dark:bg-slate-900"
+                                                : "hover:bg-gray-200 dark:hover:bg-gray-700")
+                                        }
                                                 id="tabs-with-card-item-2" data-hs-tab="#tabs-with-card-2"
                                                 aria-controls="tabs-with-card-2" role="tab">
              <span className="flex">
              <svg
-                 className="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200"
+                 className={"flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7  " +(openTab === 2
+                     ? "text-lightPrimary dark:text-blue-500 "
+                     : "text-gray-800 dark:text-gray-200")
+                 }
                  xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
              <path fillRule="evenodd"
                    d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
              </svg>
              <span className="grow ml-6">
              <span
-                 className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">Smart dashboards</span>
-             <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">Quickly Preline sample components, copy-paste codes, and start right off.</span>
+                 className={"block text-lg font-semibold  "+(openTab === 2
+                     ? "text-lightPrimary dark:text-blue-500 "
+                     : "text-gray-800 dark:text-gray-200")}>Compliance</span>
+             <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">Background background checks
+• Due diligence
+• Support for compliance</span>
              </span>
              </span>
                                         </button>
                                         <button type="button"
-                                                className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-left hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700"
+                                                onClick={e => {
+                                                    e.preventDefault();
+                                                    setOpenTab(3);
+                                                }}
+                                                className={" text-left " +
+                                                    " p-4 md:p-5 rounded-xl  " +
+                                                        (openTab === 3
+                                                            ? "bg-white shadow-md   dark:bg-slate-900"
+                                                            : "hover:bg-gray-200 dark:hover:bg-gray-700")
+                                                }
                                                 id="tabs-with-card-item-3" data-hs-tab="#tabs-with-card-3"
                                                 aria-controls="tabs-with-card-3" role="tab">
              <span className="flex">
              <svg
-                 className="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200"
+                 className={"flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7  " +(openTab === 3
+                     ? "text-lightPrimary dark:text-blue-500 "
+                     : "text-gray-800 dark:text-gray-200")
+                 }
                  xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
              <path
                  d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
              </svg>
              <span className="grow ml-6">
              <span
-                 className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">Powerful features</span>
-             <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">Reduce time and effort on building modern look design with Preline only.</span>
+                 className={"block text-lg font-semibold  "+(openTab === 3
+                     ? "text-lightPrimary dark:text-blue-500 "
+                     : "text-gray-800 dark:text-gray-200")}>Operationnal</span>
+
+             <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">• Accompaniment anti-corruption
+• Export support</span>
              </span>
              </span>
                                         </button>
@@ -283,27 +304,62 @@ export default function Home() {
                                     <div className="relative">
                                         {/* Tab Content */}
                                         <div>
-                                            <div id="tabs-with-card-1" role="tabpanel"
-                                                 aria-labelledby="tabs-with-card-item-1">
-                                                <img
-                                                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                                                    src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
-                                                    alt="Image Description"/>
-                                            </div>
-                                            <div id="tabs-with-card-2" className="hidden" role="tabpanel"
-                                                 aria-labelledby="tabs-with-card-item-2">
-                                                <img
-                                                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                                                    src="https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
-                                                    alt="Image Description"/>
-                                            </div>
-                                            <div id="tabs-with-card-3" className="hidden" role="tabpanel"
-                                                 aria-labelledby="tabs-with-card-item-3">
-                                                <img
-                                                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                                                    src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
-                                                    alt="Image Description"/>
-                                            </div>
+                                            {
+                                                (() => {
+                                                    switch (openTab) {
+                                                        case 1:
+                                                            return (
+                                                                <div
+                                                                    id="tabs-with-card-1"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="tabs-with-card-item-1"
+                                                                >
+                                                                    <Image
+                                                                        className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                                                                        src={strategy}
+                                                                        alt="Team establishing a strategy"
+                                                                        width={987}
+
+
+                                                                    />
+                                                                </div>
+                                                            );
+                                                        case 2:
+                                                            return (
+                                                                <div
+                                                                    id="tabs-with-card-2"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="tabs-with-card-item-2"
+                                                                >
+                                                                    <Image
+                                                                        className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                                                                        src={compliance}
+                                                                        alt="Important contract"
+                                                                        width={987}
+                                                                    />
+                                                                </div>
+                                                            );
+                                                        case 3:
+                                                            return (
+                                                                <div
+                                                                    id="tabs-with-card-3"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="tabs-with-card-item-3"
+                                                                >
+                                                                    <Image
+                                                                        className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                                                                        src={operationnal}
+                                                                        alt="Woman talking to people"
+                                                                        width={987}
+                                                                        height={1220}
+                                                                    />
+                                                                </div>
+                                                            );
+                                                        default:
+                                                            return null;
+                                                    }
+                                                })()
+                                            }
                                         </div>
                                         {/* End Tab Content */}
 
@@ -321,81 +377,6 @@ export default function Home() {
                         </div>
                     </div>
                     {/* End Features */}
-                    );
-
-                    {/*<div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">*/}
-                    {/*    <div className={"flex justify-center w-full"}>*/}
-                    {/*        <div className="grid place-self-center max-w-screen-md mb-8 lg:mb-16">*/}
-                    {/*            <h2 className="mb-4 text-4xl place-self-center tracking-tight font-bold text-gray-900 dark:text-white">Our area of expertise</h2>*/}
-                    {/*            <p className="text-gray-500 sm:text-xl dark:text-gray-400 text-center">Our expertise in economic intelligence covers key areas of strategy,*/}
-                    {/*                compliance, and operations. We offer sector studies, background checks, due diligence,*/}
-                    {/*                as well as support for compliance, including anti-corruption accompaniment and export assistance..*/}
-                    {/*            </p>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-
-                    {/*    <div className="">*/}
-                    {/*        <div className="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">*/}
-                    {/*            <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">*/}
-                    {/*                <div*/}
-                    {/*                    className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 pt-12 hover:shadow-2xl hover:shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">*/}
-                    {/*                    <div className="mb-12 space-y-4">*/}
-                    {/*                        <div className={"flex place-content-center"}>*/}
-                    {/*                            <Image src={strategy} alt={"illustration of man standing in front of a tab"} className={"h-1/2 w-1/2 "} width={800} height={500}/>*/}
-                    {/*                        </div>*/}
-                    {/*                        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Strategy</h3>*/}
-                    {/*                        <ul className="mb-6 text-lg text-gray-600 dark:text-gray-300">*/}
-                    {/*                            <li>*/}
-                    {/*                                • Sector studies*/}
-                    {/*                            </li>*/}
-                    {/*                            <li>• Business Intelligence Mapping</li>*/}
-                    {/*                        </ul>*/}
-                    {/*                        <a href="#" className="block font-medium text-primary">Know more</a>*/}
-                    {/*                    </div>*/}
-                    {/*                </div>*/}
-                    {/*                <div*/}
-                    {/*                    className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 py-12 hover:shadow-2xl hover:shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">*/}
-                    {/*                    <div className="mb-12 space-y-4">*/}
-                    {/*                        <div className={"flex place-content-center h-fit"}>*/}
-                    {/*                            <Image src={compliance} alt={"illustration of man standing in front of a tab"} className={"h-1/2 w-1/2 "} width={800} height={500}/>*/}
-                    {/*                        </div>*/}
-                    {/*                        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Compliance</h3>*/}
-                    {/*                        <ul className="mb-6 text-lg text-gray-600 dark:text-gray-300">*/}
-                    {/*                            <li>*/}
-                    {/*                                • Background*/}
-                    {/*                                background checks*/}
-                    {/*                            </li>*/}
-                    {/*                            <li>*/}
-                    {/*                                • Due diligence*/}
-                    {/*                            </li>*/}
-                    {/*                            <li>*/}
-                    {/*                                • Support for*/}
-                    {/*                                compliance*/}
-                    {/*                            </li>*/}
-                    {/*                        </ul>*/}
-                    {/*                        <a href="#" className="block font-medium text-primary">Know more</a>*/}
-                    {/*                    </div>*/}
-                    {/*                </div>*/}
-                    {/*                <div*/}
-                    {/*                    className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 py-12 hover:shadow-2xl hover:shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">*/}
-                    {/*                    <div className="mb-12 space-y-4">*/}
-                    {/*                        <div className={"flex place-content-center justify-self-stretch"}>*/}
-                    {/*                            <Image src={operationnal} alt={"illustration of man standing in front of a tab"} className={"h-full w-full"} width={800} height={500}/>*/}
-                    {/*                        </div>*/}
-                    {/*                        <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Operationnal</h3>*/}
-                    {/*                        <ul className="mb-6 text-lg text-gray-600 dark:text-gray-300">*/}
-                    {/*                            <li>*/}
-                    {/*                                • Accompaniment anti-corruption*/}
-                    {/*                            </li>*/}
-                    {/*                            <li>• Export support</li>*/}
-                    {/*                        </ul>*/}
-                    {/*                        <a href="#" className="block font-medium text-primary">Know more</a>*/}
-                    {/*                    </div>*/}
-                    {/*                </div>*/}
-                    {/*            </div>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                 </section>
                 <section>
 
@@ -404,7 +385,7 @@ export default function Home() {
                             <div
                                 className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
                                 <div className="md:5/12 lg:w-1/2">
-                                    <Image src={team} alt={"Team"} className={""}/>
+                                    <Image src={professionals} alt={"Team"} className={"rounded-xl"}/>
 
                                 </div>
                                 <div className="md:7/12 lg:w-1/2">

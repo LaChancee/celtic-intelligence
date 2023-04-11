@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import MapChart from "@/pages/Component/Map";
+import woman from 'public/working-woman.jpg'
+import Image from "next/image";
+
 export default function service() {
     return(
         <>
@@ -45,19 +48,39 @@ export default function service() {
                     <div className="flex-grow border-t border-gray-400/50"></div>
                 </div>
             </section>
-            <section>
-                <div className={"grid place-content-center"}>
-                    <div className={"max-w-4xl "}>
-                        <h1 className={"mt-2 text-3xl font-bold place-self-center text-center tracking-tight text-gray-900 sm:text-4xl"}>Global Expertise in Corporate Investigations and Risk Assessment</h1>
-                        <p className={"mt-6 text-lg leading-8  place-self-center text-center text-gray-600"}>We specialise in providing corporate investigations, competitive intelligence, political and economic risk assessments in Africa,
-                            *the Middle East and Gulf area, Western & Central Europe and Latin America.</p>
+            <section
+                className="relative isolate overflow-hidden bg-white px-3 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+
+                <div
+                    className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                    <div
+                        className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                        <div className="lg:pr-4">
+                            <div className="lg:max-w-lg">
+                                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Global Expertise in Corporate Investigations and Risk Assessment</h1>
+                                <p className="mt-6 text-xl leading-8 text-gray-700">We specialise in providing corporate investigations, competitive intelligence, political and economic risk assessments in Africa,
+                                    the Middle East and Gulf area, Western & Central Europe and Latin America.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div
+                        className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                        <MapChart/>
+                    </div>
+                    <div
+                        className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                        <div className="lg:pr-4">
+                            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                                <p>We have an expansive global network across multiple regions.</p>
 
-
-            {/*    Carte du monde qui prend toute la margeur */}
-                <div className={"w-full h-1/2 px-64"}>
-                    <MapChart/>
+                                <p className="mt-8">Celtic Intelligence's services are designed to meet our clients’ specific needs.
+                                    We aim to mitigate their exposure to risk and enhance their financial and influence performance.</p>
+                                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Extensive Local Network and Public Databases</h2>
+                                <p className="mt-6">We have access to a trustworthy network of local contacts in our regions of expertise,
+                                    as well as to extensive public record databases.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -68,9 +91,9 @@ export default function service() {
                         {/* Grid */}
                         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
                             <div>
-                                <img
+                                <Image
                                     className="rounded-xl"
-                                    src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80"
+                                    src={woman}
                                     alt="Image Description"
                                 />
                             </div>
