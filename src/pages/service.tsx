@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import MapChart from "@/pages/Component/Map";
 import woman from 'public/working-woman.jpg'
+import risks from 'public/evaluate-risks.jpg'
+import topViewTeam from 'public/top-view-team.jpg'
+import qualitySeal from 'public/qualitySeal.jpg'
 import Image from "next/image";
+import Link from "next/link";
 
 export default function service() {
     return(
@@ -42,7 +46,7 @@ export default function service() {
                     </div>
                 </div>
                 {/* End Hero */}
-                <div className="relative flex py-5 items-center px-32">
+                <div className="relative flex py-5 items-center px-64">
                     <div className="flex-grow border-t border-gray-400/50"></div>
                     <span className="flex-shrink mx-4 text-gray-400">Continue</span>
                     <div className="flex-grow border-t border-gray-400/50"></div>
@@ -249,6 +253,105 @@ export default function service() {
                 </>
 
             </section>
+            <section>
+                <div className="py-16">
+                    <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
+                        <div className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
+
+                            <div className="md:7/12 lg:w-1/2">
+                                <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+                                    Integrity Due Diligence and Risk Assessment for Business Partners
+                                </h2>
+                                <p className="my-8 text-gray-600 dark:text-gray-300">
+                                    Celtic Intelligence carries out in-depth investigations into the integrity and reputation of our clients’ potential business partners.
+                                </p>
+                                <p className="my-8 text-gray-600 dark:text-gray-300">
+                                    We aim to assess the level of risk exposure for our clients, ensure that they make informed decisions and that their business operates to the highest standards of governance, including compliance with relevant legislation in EU countries.
+                                </p>
+                                <Link className="inline-flex justify-center items-center gap-x-3 text-center bg-primary hover:bg-primary/80 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                                   href="/contact">
+                                    Get in touch
+                                    <svg className="w-3 h-3" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path
+                                            d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </Link>
+                            </div>
+                            <div className="md:5/12 lg:w-1/2">
+                                <Image
+                                    src={risks}
+                                    alt="People evaluating risks"
+                                    loading="lazy"
+                                    className={"rounded-xl"}
+                                    width={500}
+
+
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <div className="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:h-fit lg:grid-cols-2">
+                        <div className="relative rounded-xl z-10 lg:py-16">
+                            <div className="relative rounded-xl h-64 sm:h-80 lg:h-full">
+                                <Image alt="" src={topViewTeam} className={"rounded-xl  "}/>
+                            </div>
+                        </div>
+                        <div className="relative rounded-tr-xl rounded-br-xl flex items-center bg-gray-100">
+                            <span className="hidden rounded-tl-xl rounded-bl-xl  lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100" />
+                            <div className="p-8 sm:p-16 lg:p-24">
+                                <h2 className="text-2xl font-bold sm:text-3xl">
+                                    Integrity Due Diligence and Risk Assessment
+                                </h2>
+                                <p className="mt-4 text-gray-600">
+                                    Celtic Intelligence now has an agile team of experts in the field of integrity due diligence.
+                                    This process of securing third parties requires mastering both the processing of information
+                                    from open sources and the exploitation of local human sources,
+                                    regardless of the country of intervention and the sector of activity.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+                    <div className="max-w-3xl">
+                        <h2 className="text-3xl font-bold sm:text-4xl">
+                            Comprehensive Analysis and Quality Assurance
+                        </h2>
+                    </div>
+                    <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                        <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
+                            <Image
+                                alt="Party"
+                                src={qualitySeal}
+                                className="absolute inset-0 h-full w-full object-cover rounded-xl"
+                            />
+                        </div>
+                        <div className="lg:py-16">
+                            <article className="space-y-4 text-gray-600">
+                                <p>
+                                    Celtic Intelligence guarantees the reliability and quality of its analysis as to the reputation
+                                    and honorability of the target company and its key executives, the capital structure as well as the end beneficiaries,
+                                    the relational networks of the persons concerned,
+                                    the financial strength of the target and the existence of possible hidden litigation
+                                    and/or liabilities, the potential risks of corruption or reputation,
+                                    and finally the operational capacity of the company.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </>
     )
 };
