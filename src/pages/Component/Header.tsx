@@ -84,6 +84,14 @@ const Header = () => {
                                                 href="#"
                                                 className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                                             >
+                                                <span>Blog</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
+                                            >
                                                 <span>Contact</span>
                                             </a>
                                         </li>
