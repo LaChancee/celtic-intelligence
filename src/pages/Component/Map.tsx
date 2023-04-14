@@ -27,7 +27,7 @@ export default function MapChart() {
                                         outline: 'none',
                                     },
                                     pressed: {
-                                        fill: '#E42',
+                                        fill: '#346699',
                                         outline: 'none',
                                     },
                                 }}
