@@ -64,19 +64,19 @@ const Header = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                href="/case-studies"
                                                 className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                                             >
                                                 <span>Case studies</span>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
                                             <Link
-                                                href="/about"
+                                                href="/client"
                                                 className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                                             >
-                                                <span>About us</span>
+                                                <span>Client</span>
                                             </Link>
                                         </li>
                                         <li>
