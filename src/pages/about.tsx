@@ -37,7 +37,7 @@ const About = () => {
             <section>
                 <div className="py-16">
                     <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
-                        <div className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
+                        <div className="lg:bg-blue-50/30 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
 
                             <div className="md:7/12 lg:w-1/2">
                                 <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
@@ -278,7 +278,7 @@ const About = () => {
                 </>
 
             </section>
-            <section className={"py-4 flex justify-center"}>
+            <section className={"py-4 flex justify-center bg-blue-50/30"}>
                 <div className="flex flex-col justify-center bg-white w-fit border border-lightPrimary/30 shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="p-4 md:p-5">
 

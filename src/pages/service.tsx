@@ -46,14 +46,10 @@ export default function service() {
                     </div>
                 </div>
                 {/* End Hero */}
-                <div className="relative flex py-5 items-center px-64">
-                    <div className="flex-grow border-t border-gray-400/50"></div>
-                    <span className="flex-shrink mx-4 text-gray-400">Continue</span>
-                    <div className="flex-grow border-t border-gray-400/50"></div>
-                </div>
+
             </section>
             <section
-                className="relative isolate overflow-hidden bg-white px-3 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+                className="relative isolate overflow-hidden bg-blue-50/30 px-3 py-24 sm:py-32 lg:overflow-visible lg:px-0">
 
                 <div
                     className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
@@ -256,7 +252,7 @@ export default function service() {
             <section>
                 <div className="py-16">
                     <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
-                        <div className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
+                        <div className="lg:bg-blue-50/30 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
 
                             <div className="md:7/12 lg:w-1/2">
                                 <h2 className="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
@@ -303,8 +299,8 @@ export default function service() {
                                 <Image alt="" src={topViewTeam} className={"rounded-xl  "}/>
                             </div>
                         </div>
-                        <div className="relative rounded-tr-xl rounded-br-xl flex items-center bg-gray-100">
-                            <span className="hidden rounded-tl-xl rounded-bl-xl  lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100" />
+                        <div className="relative rounded-tr-xl rounded-br-xl flex items-center bg-blue-50/30">
+                            <span className="hidden rounded-tl-xl rounded-bl-xl  lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-blue-50/30" />
                             <div className="p-8 sm:p-16 lg:p-24">
                                 <h2 className="text-2xl font-bold sm:text-3xl">
                                     Integrity Due Diligence and Risk Assessment

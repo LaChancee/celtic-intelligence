@@ -75,7 +75,7 @@ const CaseStudies = ({ cases }: { cases: Case[] }) => {
                 {/* Card Blog */}
                 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                     {/* Grid */}
-                    <div className="grid sm:grid-cols-2  gap-6">
+                    <div className="grid sm:grid-cols-2  gap-12">
 
                         {/* Card */}
                         {cases.map((post: Case) => (
@@ -83,7 +83,7 @@ const CaseStudies = ({ cases }: { cases: Case[] }) => {
 
                         <div key={post.id} className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
 
-                            <div className="p-4 md:p-6">
+                            <div className="p-6 md:p-8">
 
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
                                     {post.attributes.Title}
