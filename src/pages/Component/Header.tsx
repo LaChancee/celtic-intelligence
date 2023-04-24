@@ -80,6 +80,14 @@ const Header = () => {
                                             </Link>
                                         </li>
                                         <li>
+                                            <Link
+                                                href="/about"
+                                                className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
+                                            >
+                                                <span>About</span>
+                                            </Link>
+                                        </li>
+                                        <li>
                                             <a
                                                 href="#"
                                                 className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
@@ -88,12 +96,12 @@ const Header = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                href="/contact"
                                                 className="block md:px-4 hover:text-blue-600 transition hover:text-primary dark:hover:text-primaryLight"
                                             >
                                                 <span>Contact</span>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
