@@ -74,32 +74,33 @@ export default function Home() {
                                 </a>
                             </div>
                         </div>
-                        <div className="px-4 mx-auto text-center">
-                            <span className="font-semibold text-gray-400 uppercase">TRUSTED BY PROFESSIONAL</span>
-                            {/*Professionals*/}
-                            <div
-                                className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
-                                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                                    <Image src={acb} alt={"logo acb"} width={200}
-                                           className={"grayscale hover:grayscale-0"}/>
-                                </a>
-                                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                                    <Image src={cercleLogo} alt={"logo acb"} height={100}
-                                           className={"grayscale hover:grayscale-0"}/>
-                                </a>
-                                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                                    <Image src={ACFE} alt={"logo acb"} height={100} width={200}
-                                           className={"grayscale hover:grayscale-0"}/>
-                                </a>
-                                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                                    <Image src={synfie} alt={"logo acb"} height={100} width={200}
-                                           className={"grayscale hover:grayscale-0"}/>
-                                </a>
-                            </div>
-                            {/* fin professional*/}
-                        </div>
+
                     </div>
                 </section>
+                <div className=" px-24 py-5 mx-auto text-center bg-blue-50/30">
+                    <span className="font-semibold text-gray-400 uppercase">TRUSTED BY PROFESSIONAL</span>
+                    {/*Professionals*/}
+                    <div
+                        className="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+                        <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <Image src={acb} alt={"logo acb"} width={200}
+                                   className={"grayscale hover:grayscale-0"}/>
+                        </a>
+                        <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <Image src={cercleLogo} alt={"logo acb"} height={100}
+                                   className={"grayscale hover:grayscale-0"}/>
+                        </a>
+                        <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <Image src={ACFE} alt={"logo acb"} height={100} width={200}
+                                   className={"grayscale hover:grayscale-0"}/>
+                        </a>
+                        <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <Image src={synfie} alt={"logo acb"} height={100} width={200}
+                                   className={"grayscale hover:grayscale-0"}/>
+                        </a>
+                    </div>
+                    {/* fin professional*/}
+                </div>
                 {/*Content sectction*/}
                 <section
                     className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -129,43 +130,87 @@ export default function Home() {
                                     <p>We have an expansive global network across multiple regions.</p>
                                     <ul role="list" className="mt-8 space-y-8 text-gray-600">
                                         <li className="flex gap-x-3">
-                                            <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
-                                                 fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                      d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
-                                                      clip-rule="evenodd"/>
+                                            <svg
+                                                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
+                                                    fill="currentColor"
+                                                    fillOpacity="0.1"
+                                                />
+                                                <path
+                                                    d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
+                                                    fill="currentColor"
+                                                />
                                             </svg>
                                             <span><strong
                                                 className="font-semibold text-lg text-gray-900">Africa</strong>   </span>
                                         </li>
                                         <li className="flex gap-x-3">
-                                            <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
-                                                 fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                      d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
-                                                      clip-rule="evenodd"/>
+                                            <svg
+                                                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
+                                                    fill="currentColor"
+                                                    fillOpacity="0.1"
+                                                />
+                                                <path
+                                                    d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
+                                                    fill="currentColor"
+                                                />
                                             </svg>
                                             <span><strong className="font-semibold text-lg text-gray-900">Middle East and Gulf area,</strong></span>
                                         </li>
                                         <li className="flex gap-x-3">
-                                            <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
-                                                 fill="currentColor" aria-hidden="true">
+                                            <svg
+                                                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
                                                 <path
-                                                    d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"/>
-                                                <path fill-rule="evenodd"
-                                                      d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                                                      clip-rule="evenodd"/>
+                                                    d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
+                                                    fill="currentColor"
+                                                    fillOpacity="0.1"
+                                                />
+                                                <path
+                                                    d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
+                                                    fill="currentColor"
+                                                />
                                             </svg>
                                             <span><strong className="font-semibold text-lg text-gray-900">Western and Central Europe</strong></span>
                                         </li>
                                         <li className="flex gap-x-3">
-                                            <svg className="mt-1 h-5 w-5 flex-none text-primary" viewBox="0 0 20 20"
-                                                 fill="currentColor" aria-hidden="true">
+                                            <svg
+                                                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
                                                 <path
-                                                    d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"/>
-                                                <path fill-rule="evenodd"
-                                                      d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                                                      clip-rule="evenodd"/>
+                                                    d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
+                                                    fill="currentColor"
+                                                    fillOpacity="0.1"
+                                                />
+                                                <path
+                                                    d="M10.9295 4.88618C11.1083 4.67577 11.4238 4.65019 11.6343 4.82904C11.8446 5.00788 11.8702 5.32343 11.6914 5.53383L7.44139 10.5338C7.25974 10.7475 6.93787 10.77 6.72825 10.5837L4.47825 8.5837C4.27186 8.40024 4.25327 8.0842 4.43673 7.87781C4.62019 7.67142 4.93622 7.65283 5.14261 7.83629L7.01053 9.49669L10.9295 4.88618Z"
+                                                    fill="currentColor"
+                                                />
                                             </svg>
                                             <span><strong
                                                 className="font-semibold text-xl text-gray-900">Latin America</strong></span>
@@ -372,7 +417,7 @@ export default function Home() {
                             {/* Background Color */}
                             <div className="absolute inset-0 grid grid-cols-12 w-full h-full">
                                 <div
-                                    className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-white/[.075]"/>
+                                    className="col-span-full lg:col-span-7 lg:col-start-6 bg-blue-50/30 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-white/[.075]"/>
                             </div>
                             {/* End Background Color */}
                         </div>
@@ -384,7 +429,7 @@ export default function Home() {
                     <div className="py-16">
                         <div className="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
                             <div
-                                className="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
+                                className="lg:bg-blue-50/30 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center">
                                 <div className="md:5/12 lg:w-1/2">
                                     <Image src={professionals} alt={"Team"} className={"rounded-xl"}/>
 
@@ -403,200 +448,6 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section>
-
-                    {/* Contact Us */}
-                    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-                        <div className="max-w-2xl lg:max-w-5xl mx-auto">
-                            <div className="text-center">
-                                <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
-                                    Contact us
-                                </h1>
-                                <p className="mt-1 text-gray-600 dark:text-gray-400">
-                                    We'd love to talk about how we can help you.
-                                </p>
-                            </div>
-                            <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-                                {/* Card */}
-                                <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
-                                    <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
-                                        Fill in the form
-                                    </h2>
-                                    <form>
-                                        <div className="grid gap-4">
-                                            {/* Grid */}
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                                <div>
-                                                    <label htmlFor="hs-firstname-contacts-1" className="sr-only">First
-                                                        Name</label>
-                                                    <input type="text" name="hs-firstname-contacts-1"
-                                                           id="hs-firstname-contacts-1"
-                                                           className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
-                                                           placeholder="First Name"/>
-                                                </div>
-                                                <div>
-                                                    <label htmlFor="hs-lastname-contacts-1" className="sr-only">Last
-                                                        Name</label>
-                                                    <input type="text" name="hs-lastname-contacts-1"
-                                                           id="hs-lastname-contacts-1"
-                                                           className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
-                                                           placeholder="Last Name"/>
-                                                </div>
-                                            </div>
-                                            {/* End Grid */}
-                                            <div>
-                                                <label htmlFor="hs-email-contacts-1" className="sr-only">Email</label>
-                                                <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1"
-                                                       autoComplete="email"
-                                                       className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
-                                                       placeholder="Email"/>
-                                            </div>
-                                            <div>
-                                                <label htmlFor="hs-phone-number-1" className="sr-only">Phone
-                                                    Number</label>
-                                                <input type="text" name="hs-phone-number-1" id="hs-phone-number-1"
-                                                       className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
-                                                       placeholder="Phone Number"/>
-                                            </div>
-                                            <div>
-                                                <label htmlFor="hs-about-contacts-1" className="sr-only">Details</label>
-                                                <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows={4}
-                                                          className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
-                                                          placeholder="Details" defaultValue={""}/>
-                                            </div>
-                                        </div>
-                                        {/* End Grid */}
-                                        <div className="mt-4 grid">
-                                            <button type="submit"
-                                                    className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Send
-                                                inquiry
-                                            </button>
-                                        </div>
-                                        <div className="mt-3 text-center">
-                                            <p className="text-sm text-gray-500">
-                                                We'll get back to you in 1-2 business days.
-                                            </p>
-                                        </div>
-                                    </form>
-                                </div>
-                                {/* End Card */}
-                                <div className="divide-y divide-gray-200 dark:divide-gray-800">
-                                    {/* Icon Block */}
-                                    <div className="flex gap-x-7 py-6">
-                                        <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
-                                             xmlns="http://www.w3.org/2000/svg" width={16} height={16}
-                                             fill="currentColor" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                            <path
-                                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                                        </svg>
-                                        <div>
-                                            <h3 className="font-semibold text-gray-800 dark:text-gray-200">Knowledgebase</h3>
-                                            <p className="mt-1 text-sm text-gray-500">We're here to help with any
-                                                questions or code.</p>
-                                            <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                                               href="#">
-                                                Contact support
-                                                <svg
-                                                    className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
-                                                    width={16} height={16} viewBox="0 0 16 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fillRule="evenodd" clipRule="evenodd"
-                                                          d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
-                                                          fill="currentColor"/>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/* End Icon Block */}
-                                    {/* Icon Block */}
-                                    <div className="flex gap-x-7 py-6">
-                                        <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
-                                             xmlns="http://www.w3.org/2000/svg" width={16} height={16}
-                                             fill="currentColor" viewBox="0 0 16 16">
-                                            <path
-                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path
-                                                d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                                        </svg>
-                                        <div>
-                                            <h3 className="font-semibold text-gray-800 dark:text-gray-200">FAQ</h3>
-                                            <p className="mt-1 text-sm text-gray-500">Search our FAQ for answers to
-                                                anything you might ask.</p>
-                                            <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                                               href="#">
-                                                Visit FAQ
-                                                <svg
-                                                    className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
-                                                    width={16} height={16} viewBox="0 0 16 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fillRule="evenodd" clipRule="evenodd"
-                                                          d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
-                                                          fill="currentColor"/>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/* End Icon Block */}
-                                    {/* Icon Block */}
-                                    <div className=" flex gap-x-7 py-6">
-                                        <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
-                                             xmlns="http://www.w3.org/2000/svg" width={16} height={16}
-                                             fill="currentColor" viewBox="0 0 16 16">
-                                            <path
-                                                d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
-                                            <path
-                                                d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
-                                        </svg>
-                                        <div>
-                                            <h3 className="font-semibold text-gray-800 dark:text-gray-200">Developer
-                                                APIs</h3>
-                                            <p className="mt-1 text-sm text-gray-500">Check out our development
-                                                quickstart guide.</p>
-                                            <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                                               href="#">
-                                                Contact sales
-                                                <svg
-                                                    className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
-                                                    width={16} height={16} viewBox="0 0 16 16" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fillRule="evenodd" clipRule="evenodd"
-                                                          d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
-                                                          fill="currentColor"/>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/* End Icon Block */}
-                                    {/* Icon Block */}
-                                    <div className=" flex gap-x-7 py-6">
-                                        <svg className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 dark:text-gray-200"
-                                             xmlns="http://www.w3.org/2000/svg" width={16} height={16}
-                                             fill="currentColor" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                                        </svg>
-                                        <div>
-                                            <h3 className="font-semibold text-gray-800 dark:text-gray-200">Contact us by
-                                                email</h3>
-                                            <p className="mt-1 text-sm text-gray-500">If you wish to write us an email
-                                                instead please use</p>
-                                            <a className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                                               href="#">
-                                                example@site.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/* End Icon Block */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* End Contact Us */}
-
-                </section>
-
             </main>
         </>
     )
