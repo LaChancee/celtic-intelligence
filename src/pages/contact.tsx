@@ -212,16 +212,16 @@ const Contact = () => {
                                 </svg>
                                 <div>
                                     <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                                        Developer APIs
+                                        Blog
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500">
-                                        Check out our development quickstart guide.
+                                        Check out our articles
                                     </p>
                                     <a
                                         className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                                         href="#"
                                     >
-                                        Contact sales
+                                        Visit blog
                                         <svg
                                             className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
                                             width={16}
@@ -264,7 +264,7 @@ const Contact = () => {
                                         className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
                                         href="#"
                                     >
-                                        example@site.com
+                                        contact@celtic-intelligence.com
                                     </a>
                                 </div>
                             </div>
