@@ -83,7 +83,7 @@ const CaseStudies = ({ cases }: { cases: Case[] }) => {
 
                         <div key={post.id} className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
 
-                            <div className="p-6 md:p-8">
+                            <div className="p-6 md:p-8 ">
 
                                 <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
                                     {post.attributes.Title}
