@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { GetStaticProps } from 'next';
 import axios from 'axios';
-import Image from "next/image";
-import logo from "public/logo-celtic.png"
+
 
 
 

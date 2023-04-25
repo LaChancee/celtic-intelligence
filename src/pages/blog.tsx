@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: {
-            cases: response.data.data,
+            articles: response.data.data,
         },
     };
 };
@@ -63,7 +63,7 @@ const Blog = ({ articles }: { articles : Article[] }) => {
                 {/* End Title */}
                 {/* Grid */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {articles.map((article: Article) => (
+                    {articles?.map((article: Article) => (
 
                     <a
                         key={article.id}
@@ -80,6 +80,9 @@ const Blog = ({ articles }: { articles : Article[] }) => {
                         <h3 className="mt-5 text-xl text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
                             {article.attributes.title}
                         </h3>
+                        <p className="mt-5 text-xl text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                            {article.attributes.description}
+                        </p>
                         <p className="mt-3 inline-flex items-center gap-x-2 text-sm font-semibold text-gray-800 dark:text-gray-200">
                             Learn more
                             <svg
