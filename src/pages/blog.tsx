@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { GetStaticProps } from 'next';
 import axios from 'axios';
-
+import Image from "next/image";
+import compliance from "public/operationnal.svg"
+import Link from "next/link";
 
 
 
@@ -65,22 +67,33 @@ const Blog = ({ articles }: { articles : Article[] }) => {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {articles?.map((article: Article) => (
 
-                    <a
-                        key={article.id}
-                        className="group hover:bg-gray-100 rounded-xl p-5 transition-all dark:hover:bg-white/[.05]"
-                        href="/article"
-                    >
-                        <div className="aspect-w-16 aspect-h-10">
-                            <img
-                                className="w-full object-cover rounded-xl"
-                                src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+                        <Link
+                            key={article.id}
+                            className="group grid content-between  hover:bg-gray-100 rounded-xl p-5 transition-all dark:hover:bg-white/[.05]"
+                            href={{
+                                pathname: '/articles/[articleId]',
+                                query: {
+                                    articleId: article.id,
+                                    title: article.attributes.title,
+                                    content: article.attributes.content,
+                                    description: article.attributes.description,
+                                    category: article.attributes.category,
+                                    publishedAt: article.attributes.publishedAt,
+                                    }
+                        }}
+                        >
+
+                        <div className="aspect-w-14 aspect-h-10">
+                            <Image
+                                className="w-1/2 h-1/2 object-cover rounded-xl"
+                                src={compliance}
                                 alt="Image Description"
                             />
                         </div>
                         <h3 className="mt-5 text-xl text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
                             {article.attributes.title}
                         </h3>
-                        <p className="mt-5 text-xl text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                        <p className="mt-5 text-sm text-gray-600 dark:text-gray-250 dark:group-hover:text-white">
                             {article.attributes.description}
                         </p>
                         <p className="mt-3 inline-flex items-center gap-x-2 text-sm font-semibold text-gray-800 dark:text-gray-200">
@@ -101,7 +114,7 @@ const Blog = ({ articles }: { articles : Article[] }) => {
                                 />
                             </svg>
                         </p>
-                    </a>
+                    </Link>
 
                     ))}
 
