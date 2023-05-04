@@ -4,6 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Image from "next/image";
 
 
 interface Article {
@@ -215,7 +216,7 @@ const Article = ({ article }: { article : Article }) => {
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                        <img className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
+                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
                                     </div>
                                 </a>
                                 {/* End Media */}
@@ -227,7 +228,7 @@ const Article = ({ article }: { article : Article }) => {
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                        <img className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
+                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
                                     </div>
                                 </a>
                                 {/* End Media */}
@@ -239,7 +240,7 @@ const Article = ({ article }: { article : Article }) => {
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                        <img className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
+                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
                                     </div>
                                 </a>
                                 {/* End Media */}
