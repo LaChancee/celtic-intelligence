@@ -22,26 +22,9 @@ interface Article {
 }
 
 
-const getStaticProps: GetStaticProps = async () => {
-    const router = useRouter()
-    const articleId = (router.query.articleId as string[]) || []
-    const response = await axios.get<Article>(`http://127.0.0.1:1337/api/articles/${articleId}`, {
-        headers: {
-            Authorization: `Bearer ${process.env.TOKEN}`,
-        },
-    });
-    console.log(response.data)
 
-    return {
-        props: {
-            article: response.data,
-        }
-    };
-};
-
-const Article = ({ article }: { article : Article }) => {
+const Article = () => {
     const router = useRouter()
-    const articleId = (router.query.articleId as string[]) || []
     const title = (router.query.title as string[]) || []
     const category = (router.query.category as string[]) || []
     const description = (router.query.description as string[]) || []
