@@ -15,7 +15,8 @@ const About = () => {
                                 {/* Title */}
                                 <div className="mt-5 ">
                                     <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-                                        Building a Trusted Network: Celtic Intelligence's 10-Year Journey
+                                        Building a Trusted Network: Celtic Intelligence&apos;s 10-Year Journey
+
 
                                     </h1>
                                 </div>

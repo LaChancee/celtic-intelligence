@@ -73,7 +73,7 @@ export default function service() {
                             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                                 <p>We have an expansive global network across multiple regions.</p>
 
-                                <p className="mt-8">Celtic Intelligence's services are designed to meet our clients’ specific needs.
+                                <p className="mt-8">Celtic Intelligence&apos;s services are designed to meet our clients’ specific needs.
                                     We aim to mitigate their exposure to risk and enhance their financial and influence performance.</p>
                                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">Extensive Local Network and Public Databases</h2>
                                 <p className="mt-6">We have access to a trustworthy network of local contacts in our regions of expertise,
@@ -106,7 +106,7 @@ export default function service() {
                                             Tailored Services for Risk Mitigation and Business Enhancement
                                         </h2>
                                         <p className="text-gray-500">
-                                            Celtic Intelligence's bespoke services include:
+                                            Celtic Intelligence&apos;s bespoke services include:
                                         </p>
                                     </div>
                                     {/* End Title */}

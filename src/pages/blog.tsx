@@ -17,6 +17,7 @@ interface Article {
         createdAt: string;
         updatedAt: string;
         publishedAt: string;
+        coverPicture: string;
     }
 
 }
@@ -79,6 +80,7 @@ const Blog = ({ articles }: { articles : Article[] }) => {
                                     description: article.attributes.description,
                                     category: article.attributes.category,
                                     publishedAt: article.attributes.publishedAt,
+                                    coverPictureUrl: article.attributes.coverPicture,
                                     }
                         }}
                         >
