@@ -83,7 +83,7 @@ const Article = () => {
                     Working process
                   </span>
                                 </div>
-                                <ReactMarkdown className="text-lg text-gray-800 dark:text-gray-200" children={content.toString()}/>
+                                <ReactMarkdown className="text-lg text-gray-800 dark:text-gray-200" >{content.toString()}</ReactMarkdown>
                                  <div className="grid lg:flex lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
 
                                     <div className="flex justify-end items-center gap-x-1.5">
