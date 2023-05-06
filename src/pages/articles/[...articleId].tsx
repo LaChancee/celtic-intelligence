@@ -69,14 +69,14 @@ const Article = () => {
                                     <div className="grid lg:grid-cols-2 gap-3">
                                         <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
                                             <figure className="relative w-full h-60">
-                                                <img className="w-full h-full absolute top-0 left-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description" />
+                                                <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-xl" width={200} height={200} src={"https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"} alt={"Image Description"} />
                                             </figure>
                                             <figure className="relative w-full h-60">
-                                                <img className="w-full h-full absolute top-0 left-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1671726203638-83742a2721a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description" />
+                                                <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-xl" width={200} height={200} src={"https://images.unsplash.com/photo-1671726203638-83742a2721a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"} alt={"Image Description"} />
                                             </figure>
                                         </div>
                                         <figure className="relative w-full h-72 sm:h-96 lg:h-full">
-                                            <img className="w-full h-full absolute top-0 left-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1671726203394-491c8b574a0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80" alt="Image Description" />
+                                            <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-xl" width={200} height={200} src={"https://images.unsplash.com/photo-1671726203394-491c8b574a0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"} alt={"Image Description"} />
                                         </figure>
                                     </div>
                                     <span className="mt-3 block text-sm text-center text-gray-500">
@@ -167,7 +167,7 @@ const Article = () => {
                             {/* Avatar Media */}
                             <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-gray-700">
                                 <a className="block flex-shrink-0" href="#">
-                                    <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+                                    <Image className="h-10 w-10 rounded-full" width={200} height={200} src={"https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"} alt={"Image Description"} />
                                 </a>
                                 <a className="group grow block" >
                                     <h5 className="group-hover:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
@@ -199,7 +199,7 @@ const Article = () => {
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
+                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" width={200} height={200} src={"https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"} alt={"Image Description"} />
                                     </div>
                                 </a>
                                 {/* End Media */}
@@ -211,7 +211,7 @@ const Article = () => {
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
+                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" width={200} height={200} src={"https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"} alt={"Image Description"} />
                                     </div>
                                 </a>
                                 {/* End Media */}
@@ -223,7 +223,7 @@ const Article = () => {
                     </span>
                                     </div>
                                     <div className="flex-shrink-0 relative rounded-lg overflow-hidden w-20 h-20">
-                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Image Description" />
+                                        <Image className="w-full h-full absolute top-0 left-0 object-cover rounded-lg" width={200} height={200} src={"https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"} alt={"Image Description"} />
                                     </div>
                                 </a>
                                 {/* End Media */}
