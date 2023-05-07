@@ -58,7 +58,7 @@ const LatestArticles = ({ articles }: Props) => {
 
 export const getStaticProps: GetStaticProps = async () => {
     const response = await axios.get<Articles>(
-        'http://127.0.0.1:1337/api/articles',
+        'https://obscure-refuge-04080.herokuapp.com/api/articles',
         {
             headers: {
                 Authorization: `Bearer ${process.env.TOKEN}`,
