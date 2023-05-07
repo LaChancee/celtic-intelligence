@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default async function handler(req, res) {
     try {
-        const response = await axios.get('http://127.0.0.1:1337/api/case-studies');
+        const response = await axios.get('https://obscure-refuge-04080.herokuapp.com/api/case-studies');
         const data = response.data;
 
         res.status(200).json(data);

@@ -29,7 +29,7 @@ interface Cases {
     };
 }
 export const getStaticProps: GetStaticProps = async () => {
-    const response = await axios.get<Cases>('http://127.0.0.1:1337/api/case-studies', {
+    const response = await axios.get<Cases>('https://obscure-refuge-04080.herokuapp.com/api/case-studies', {
         headers: {
             Authorization: `Bearer ${process.env.TOKEN}`,
         },
