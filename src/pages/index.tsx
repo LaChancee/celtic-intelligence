@@ -43,7 +43,7 @@ export default function Home() {
                         className="relative z-10 flex flex-col gap-1 items-center justify-center  px-4 py-8 rounded-md s">
                         <div className={"flex gap-2"}>
                             <Image src={logo} alt={"logo"} width={40} height={40}/>
-                            <h1 className="text-4xl font-bold text-white"> Celtics-intelligence</h1>
+                            <h1 className="text-4xl font-bold text-white"> Celtic Intelligence</h1>
                         </div>
                         <h2 className={"text-2xl font-semibold text-white"}>TRANSVERSAL INVESTIGATIONS & ANALYSES</h2>
                     </div>
