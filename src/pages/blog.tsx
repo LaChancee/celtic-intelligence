@@ -55,13 +55,18 @@ const Blog = ({ articles }: { articles : Article[] }) => {
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 {/* Title */}
                 <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
-                        Blog
-                    </h2>
-                    <p className="mt-1 text-gray-600 dark:text-gray-400">
-                        See how game-changing companies are making the most of every engagement
-                        with Celtic intelligence.
-                    </p>
+                    <div className={"mt-8"}>
+                        <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+                            Blog
+
+
+                        </h1>
+                        <p className="mt-4 text-gray-600 dark:text-gray-400">
+                            See how game-changing companies are making the most of every engagement
+                            with Celtic intelligence.
+                        </p>
+                    </div>
+
                 </div>
                 {/* End Title */}
                 {/* Grid */}

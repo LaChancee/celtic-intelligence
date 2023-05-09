@@ -53,7 +53,7 @@ const CaseStudies = ({ cases }: { cases: Case[] }) => {
                         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
                             <div className="max-w-2xl text-center mx-auto">
                                 {/* Title */}
-                                <div className="mt-5 ">
+                                <div className="mt-8 ">
                                     <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
                                         Case Studies: Real-Life Examples of Celtic Intelligence in Action
                                     </h1>

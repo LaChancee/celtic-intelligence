@@ -13,7 +13,7 @@ const About = () => {
                         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
                             <div className="max-w-2xl text-center mx-auto">
                                 {/* Title */}
-                                <div className="mt-5 ">
+                                <div className="mt-8 ">
                                     <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
                                         Building a Trusted Network: Celtic Intelligence&apos;s 10-Year Journey
 
