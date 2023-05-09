@@ -288,7 +288,7 @@ const About = () => {
                         </p>
                         <a
                             className="mt-3 inline-flex items-center gap-2 mt-5 text-sm font-medium text-blue-500 hover:text-blue-700"
-                            href="#"
+                            href="mailto:contact@celtic-intelligence.com" aria-label="send mail"
                         >
 
                             contact@celtic-intelligence.com
